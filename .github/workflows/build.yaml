@@ -22,7 +22,7 @@ jobs:
 
       - name: push
         run: |
-          TAGKEY=`docker images | grep web  | awk '{print $3}'`
+          TAGKEY=`docker images | grep rsyslog | awk '{print $3}'`
           docker tag "$TAGKEY" ghcr.io/zinntikumugai/rsyslog
           docker push ghcr.io/zinntikumugai/rsyslog
 
