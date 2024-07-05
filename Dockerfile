@@ -11,3 +11,4 @@ RUN apt update \
 COPY rsyslog.conf /etc/rsyslog.conf
 
 CMD ["/usr/sbin/rsyslogd", "-n", "-iNONE"]
+LABEL org.opencontainers.image.source https://github.com/zinntikumugai/rsyslog-docker
